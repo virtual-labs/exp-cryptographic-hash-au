@@ -7,19 +7,37 @@
 <h4>Properties of hash functions</h4>
 
 <p>Pre-Image Resistance</p>
-<li> Reversing a hash function should be computationally difficult.</li>
- <li>if a hash function h generates a hash value z, it should be difficult to identify an input value x that hashes to z.</li>
+ <p>
+        A cryptographic hash function <b>h</b> is preimage resistant if it is 
+        <b>computationally infeasible</b> to determine the original input <b>x</b> 
+        given only the hash output <b>h(x)</b>. This means that even if <b>h(x)</b> is known, 
+        finding an <b>x</b> such that <b>h(x)</b> produces the given output is extremely difficult.
+    </p>
+<img src="./images/prehash.jpg" alt="alternative_text" style="display: block; margin: auto;">
 
-<img src="./images/pre-image.png" alt="alternative_text" width="width_value" height="height_value">
 
 <h4>Second Pre-Image Resistance</h4>
-<li>Given a known input and its hash, it should be difficult to find another input with the same hash.</li>
-<li>it should be challenging to find another input value y such that h(y) equals h(x) if a hash function h for an input x returns the hash value h(x).</li>
-<li>This feature of the hash function protects against an attacker who wants to replace a new value for the original input value and hash, but only holds the input value and its hash.</li>
-<img src="./images/secondpreimage.png" alt="alternative_text" width="width_value" height="height_value">
+ <p>
+        A cryptographic hash function <b>h</b> satisfies <b>second preimage resistance</b> if:
+    </p>
+    
+ <ul>
+        <li>Given an input <b>x₁</b> and its hash <b>h(x₁)</b>, it should be <b>computationally infeasible</b> to find another input <b>x₂</b> such that <b>h(x₁) = h(x₂)</b>.</li>
+        <li>In other words, an attacker should not be able to find a different input <b>x₂</b> that produces the same hash as <b>x₁</b>.</li>
+        <li>This property ensures the integrity of digital signatures and stored passwords by preventing intentional collisions.</li>
+        <li>Second preimage resistance is crucial in preventing forgery and tampering with hashed data.</li>
+</ul>
+<img src="./images/secondhash.jpg" alt="alternative_text" width="width_value" height="height_value" style="display: block; margin: auto;">
 
 <h4>Collision Resistance</h4>
-<li>It is  difficult to identify two different inputs of any length that produce the same hash. This characteristic is also known as a collision-free hash function.</li>
-<li>A hash function h, it is difficult to identify two distinct inputs x and y such that h(x)=h(y).</li>
-<li>A hash function cannot be free of collisions because it is a compression function with a set hash length. The collision-free condition simply indicates that these collisions should be difficult to locate</li>
-<img src="./images/collision.png" alt="alternative_text" width="width_value" height="height_value">
+  <p>
+        A cryptographic hash function <b>h</b> satisfies <b>collision resistance</b> if:
+    </p>
+    
+<ul>
+        <li>It is <b>computationally infeasible</b> to find two different inputs <b>x₁</b> and <b>x₂</b> such that <b>h(x₁) = h(x₂)</b>.</li>
+        <li>In other words, no two distinct inputs should produce the same hash value.</li>
+        <li>This property ensures the security of digital signatures, certificates, and cryptographic integrity checks by preventing attackers from generating fraudulent data with the same hash.</li>
+        <li>Collision resistance is crucial in maintaining the uniqueness of hashes and protecting against deliberate hash collisions.</li>
+    </ul>
+<img src="./images/collisionhash.jpg" alt="alternative_text" width="width_value" height="height_value" style="display: block; margin: auto;">
