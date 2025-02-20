@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is second preimage resistance in hash functions?",
+      "answers": {
+        "a": "It ensures that given an input, it is computationally infeasible to find another input that hashes to the same value.",
+        "b": "It ensures that it is computationally infeasible to find two distinct inputs that hash to the same value.",
+        "c": "It ensures that given a hash value, it is computationally infeasible to find any input that hashes to that value.",
+        "d": "It ensures that every input has a unique hash value."
+      },
+      "explanations": {
+        "a": "Correct! Second preimage resistance ensures that given an input, it is computationally infeasible to find another input that hashes to the same value.",
+        "b": "Incorrect. This describes collision resistance.",
+        "c": "Incorrect. This describes preimage resistance.",
+        "d": "Incorrect. Hash functions do not guarantee unique hash values for every input."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is NOT a primary property of cryptographic hash functions?",
+      "answers": {
+        "a": "Preimage resistance",
+        "b": "Second preimage resistance",
+        "c": "Determinism",
+        "d": "Reversibility"
+      },
+      "explanations": {
+        "a": "Incorrect. Preimage resistance is a fundamental property of cryptographic hash functions.",
+        "b": "Incorrect. Second preimage resistance is an essential property.",
+        "c": "Incorrect. A cryptographic hash function should always produce the same output for the same input (determinism).",
+        "d": "Correct! Cryptographic hash functions are designed to be irreversible."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why are hash functions widely used in password storage?",
+      "answers": {
+        "a": "They allow easy retrieval of the original password.",
+        "b": "They ensure that even if the hash is exposed, the original password remains secure.",
+        "c": "They compress passwords to save storage space.",
+        "d": "They allow passwords to be encrypted and decrypted efficiently."
+      },
+      "explanations": {
+        "a": "Incorrect. Hash functions do not allow retrieval of the original input.",
+        "b": "Correct! Hash functions ensure that even if the hash is exposed, retrieving the original password is computationally infeasible.",
+        "c": "Incorrect. While hash functions create fixed-size outputs, their primary purpose is not compression.",
+        "d": "Incorrect. Hash functions are not encryption methods and do not support decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }

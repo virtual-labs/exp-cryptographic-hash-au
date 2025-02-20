@@ -1,2 +1,2 @@
 
-## The essential properties of a good cryptographic hash function
+## Cryptographic Hash Function Properties
