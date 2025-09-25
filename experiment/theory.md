@@ -1,5 +1,3 @@
-### Theory
-
 Hash functions play a crucial role in various security applications, including password storage (hash values instead of passwords), digital signatures, and data integrity checks. Hash values, or message digests, are values that a hash function returns. The hash function is shown in the image below:
 
 ![Hash function diagram](./images/hahsing.png)
