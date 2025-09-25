@@ -1,5 +1,3 @@
-### Contributors List
-
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 |Vipin P| Faculty | Center for Cyber Security Systems and Networks| Amrita Vishwa Vidyapeetham | vipinp@am.amrita.edu
