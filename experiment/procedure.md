@@ -1,5 +1,3 @@
-### Procedure  
-
 #### Hashing  
 
 1. Click on the **Hashing** button from the left panel.  
