@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What property of a hash function ensures that given a hash value, it is computationally infeasible to find any input that hashes to that value?",
+      "answers": {
+        "a": "Preimage resistance",
+        "b": "Second preimage resistance",
+        "c": "Collision resistance",
+        "d": "Birthday paradox"
+      },
+      "explanations": {
+        "a": "Preimage resistance ensures that given a hash value, it is computationally infeasible to find any input that hashes to that value.",
+        "b": "Second preimage resistance ensures that given an input, it is computationally infeasible to find another input that hashes to the same value.",
+        "c": "Collision resistance ensures that it is computationally infeasible to find two distinct inputs that hash to the same value.",
+        "d": "The birthday paradox is related to collisions in hash functions, but it does not directly describe the property of a hash function."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which property of a hash function ensures that given an input, it is computationally infeasible to find another input that hashes to the same value?",
+      "answers": {
+        "a": "Preimage resistance",
+        "b": "Second preimage resistance",
+        "c": "Collision resistance",
+        "d": "Birthday paradox"
+      },
+      "explanations": {
+        "a": "Preimage resistance ensures that given a hash value, it is computationally infeasible to find any input that hashes to that value.",
+        "b": "Second preimage resistance ensures that given an input, it is computationally infeasible to find another input that hashes to the same value.",
+        "c": "Collision resistance ensures that it is computationally infeasible to find two distinct inputs that hash to the same value.",
+        "d": "The birthday paradox is related to collisions in hash functions, but it does not directly describe the property of a hash function."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of a cryptographic hash function?",
+      "answers": {
+        "a": "Deterministic output",
+        "b": "Fast computation",
+        "c": "Reversibility",
+        "d": "Fixed output length"
+      },
+      "explanations": {
+        "a": "A hash function must be deterministic, meaning the same input always produces the same output.",
+        "b": "A good hash function should be fast to compute.",
+        "c": "A cryptographic hash function should be irreversible, meaning the original input cannot be derived from the hash.",
+        "d": "Hash functions produce outputs of a fixed length regardless of input size."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which attack exploits the birthday paradox to find collisions in a hash function?",
+      "answers": {
+        "a": "Brute-force attack",
+        "b": "Birthday attack",
+        "c": "Dictionary attack",
+        "d": "Rainbow table attack"
+      },
+      "explanations": {
+        "a": "A brute-force attack involves trying all possible inputs until the correct one is found.",
+        "b": "A birthday attack exploits the birthday paradox to find hash collisions more efficiently than brute-force methods.",
+        "c": "A dictionary attack uses a precompiled list of common inputs to guess values.",
+        "d": "A rainbow table attack uses precomputed hashes to crack passwords more efficiently."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary purpose of a salt in password hashing?",
+      "answers": {
+        "a": "To increase password length",
+        "b": "To make brute-force attacks easier",
+        "c": "To prevent precomputed attacks like rainbow tables",
+        "d": "To speed up hash computation"
+      },
+      "explanations": {
+        "a": "Salts do not increase password length but add randomness.",
+        "b": "Salts make brute-force attacks harder, not easier.",
+        "c": "Salts ensure that even if two users have the same password, their hashes will be different, preventing precomputed attacks like rainbow tables.",
+        "d": "Salts slightly increase computation time due to added randomness."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which hash function is considered broken due to vulnerabilities?",
+      "answers": {
+        "a": "SHA-256",
+        "b": "MD5",
+        "c": "SHA-3",
+        "d": "BLAKE2"
+      },
+      "explanations": {
+        "a": "SHA-256 is still considered secure and widely used.",
+        "b": "MD5 is broken due to collision vulnerabilities and is not recommended for cryptographic use.",
+        "c": "SHA-3 is a modern secure hash function.",
+        "d": "BLAKE2 is designed as a fast and secure alternative to MD5 and SHA-2."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
